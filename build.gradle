@@ -16,12 +16,12 @@ buildscript {
     repositories {
         mavenCentral()
     }
-    dependencies {
+    dependencies {amqp
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.3.RELEASE")
     }
 }
 
-jar {
+jar {rabbitmq.host
     baseName = 'gs-messaging-rabbitmq'
     version =  '0.1.0'
 }

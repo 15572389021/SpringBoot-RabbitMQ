@@ -17,11 +17,11 @@ public class Application {
 
     final static String queueName = "spring-boot";
     
-    final static String HOST = "120.27.114.229";
+    final static String HOST = "127.0.0.1";
 
-    final static String USERNAME = "root";
+    final static String USERNAME = "admin";
     
-    final static String PASSWORD = "root";
+    final static String PASSWORD = "admin";
 
     final static int PORT = 5672;
     
@@ -48,7 +48,7 @@ public class Application {
           connectionFactory.setUsername(USERNAME);
           connectionFactory.setPassword(PASSWORD);
           connectionFactory.setVirtualHost("/");
-          //����Ҫ����,��Ϣ�Ļص�
+          //?????????,???????
           connectionFactory.setPublisherConfirms(true); 
           return connectionFactory;
     } 
